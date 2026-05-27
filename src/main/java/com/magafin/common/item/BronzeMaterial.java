@@ -38,7 +38,7 @@ public class BronzeMaterial {
 
         @Override
         public @NotNull Ingredient getRepairIngredient() {
-            return null;
+            return Ingredient.EMPTY;
         }
     };
 }

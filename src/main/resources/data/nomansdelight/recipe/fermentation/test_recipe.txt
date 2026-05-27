@@ -1,0 +1,15 @@
+{
+  "type": "nomansdelight:fermentation",
+  "input": {
+    "item": "minecraft:apple"
+  },
+  "output": {
+    "count": 1,
+    "id": "minecraft:honey_bottle"
+  },
+  "raw_texture": "nomansdelight:block/apple_layer",
+  "ready_texture": "nomansland:block/honey_layer",
+  "time": 200,
+  "min_light": 13,
+  "max_light": 15
+}

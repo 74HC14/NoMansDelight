@@ -100,12 +100,11 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 dependencies{
     implementation "curse.maven:farmers-delight-398521:6917256"
-    implementation "curse.maven:no-mans-land-538493:7058894"
+    implementation "curse.maven:no-mans-land-538493:8154999"
     implementation "curse.maven:biolith-852512:7074761"
     implementation ("curse.maven:jei-238222:5846880")
     implementation ("curse.maven:appleskin-248787:5586600")
     implementation ("curse.maven:create-328085:6323264")
-    implementation "curse.maven:mixed-litter-1221222:7058890"
     implementation "curse.maven:cubes-without-borders-975120:5855532"
     implementation "curse.maven:selene-499980:7297858"
     implementation "curse.maven:supplementaries-412082:7302844"

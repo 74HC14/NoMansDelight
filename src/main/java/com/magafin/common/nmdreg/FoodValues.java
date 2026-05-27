@@ -62,4 +62,9 @@ public class FoodValues {
             .nutrition(11).saturationModifier(0.8F).build();
     public static final FoodProperties BILLHOOK_BASS_ROLL = (new FoodProperties.Builder())
             .nutrition(7).saturationModifier(0.6F).build();
+    public static final FoodProperties MEAT_PIE = (new FoodProperties.Builder())
+            .nutrition(6).saturationModifier(0.8F).build();
+    public static final FoodProperties SHAWARMA = (new FoodProperties.Builder())
+            .nutrition(6).saturationModifier(0.8F).build();
+
 }

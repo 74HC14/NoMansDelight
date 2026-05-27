@@ -1,11 +1,7 @@
 package com.magafin.common.nmdreg;
 
-import com.farcr.nomansland.common.definitions.ItemDefinition;
-import com.farcr.nomansland.common.item.FirebombItem;
-import com.magafin.common.entity.Ricebomb;
 import com.magafin.common.item.BronzeMaterial;
 import com.magafin.common.item.CleaverItem;
-import com.magafin.common.item.RicebombItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -13,7 +9,6 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import vectorwing.farmersdelight.common.item.ConsumableItem;
 import vectorwing.farmersdelight.common.item.DrinkableItem;
-import net.minecraft.world.item.Item.Properties;
 
 import java.util.function.Supplier;
 
@@ -73,7 +68,16 @@ public class ItemReg {
             new ConsumableItem(foodItem(FoodValues.HORSE_WRAP), false));
     public static final DeferredItem<Item> BILLHOOK_BASS_ROLL = ITEMS.register("billhook_bass_roll", registryName ->
             new ConsumableItem(foodItem(FoodValues.BILLHOOK_BASS_ROLL), false));
-    public static final DeferredItem<Item> RICEBOMB = ITEMS.register("rice_bomb", registryName ->
-            new RicebombItem(new Properties().stacksTo(8)));
+   // public static final Supplier<Item> MEAT_PIE_SLICE = ITEMS.register("meat_pie_slice",
+       // () -> new Item(foodItem(FoodValues.MEAT_PIE)));
+   // public static final Supplier<Item> MEAT_PIE = ITEMS.register("meat_pie",
+           // () -> new BlockItem(BlockReg.MEAT_PIE.get(), basicItem()));
+   // public static final DeferredItem<Item> SHAWARMA = ITEMS.register("shawarma", registryName ->
+           // new ConsumableItem(foodItem(FoodValues.SHAWARMA), false));
+   // public static final Supplier<Item> FERMENTATION_BARREL_ITEM = ITEMS.register("fermentation_barrel",
+           // () -> new BlockItem(BlockReg.FERMENTATION_BARREL.get(), basicItem()));
+
+    public static final DeferredItem<Item> ORANGE = ITEMS.register("orange", registryName ->
+            new ConsumableItem(foodItem(FoodValues.SMORE).stacksTo(64), true));
 }
 

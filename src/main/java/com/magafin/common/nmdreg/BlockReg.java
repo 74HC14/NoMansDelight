@@ -1,14 +1,14 @@
 package com.magafin.common.nmdreg;
 
-import com.magafin.common.block.LivingSoupBlock;
-import com.magafin.common.block.PestoPizzaBlock;
-import com.magafin.common.block.VenisonRouladeBlock;
+import com.magafin.common.block.*;
 import com.magafin.nomansdelight;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import vectorwing.farmersdelight.common.block.PieBlock;
 
 import java.util.function.Supplier;
 
@@ -26,4 +26,9 @@ public class BlockReg {
             () -> new VenisonRouladeBlock(ofFullCopy(Blocks.CAKE), VENISON_ROULADE_PLATE, true));
     public static final Supplier<Block> PESTO_PIZZA = BLOCKS.register("pesto_pizza",
             () -> new PestoPizzaBlock(ofFullCopy(Blocks.CAKE).noOcclusion(), PESTO_PIZZA_SLICE));
+   // public static final Supplier<Block> MEAT_PIE = BLOCKS.register("meat_pie",
+           // () -> new PieBlock(Block.Properties.ofFullCopy(Blocks.CAKE), ItemReg.MEAT_PIE_SLICE));
+    public static final Supplier<Block> FERMENTATION_BARREL = BLOCKS.register("fermentation_barrel",
+            () -> new FermentationBarrelBlock(ofFullCopy(Blocks.COMPOSTER).noOcclusion()));
 }
+

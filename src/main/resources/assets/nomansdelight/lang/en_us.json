@@ -24,5 +24,7 @@
   "item.nomansdelight.billhook_bass_slice": "Raw Billhook Bass Slice",
   "item.nomansdelight.cooked_billhook_bass_slice": "Cooked Billhook Bass Slice",
   "block.nomansdelight.pesto_pizza": "Pizza with Pesto",
-  "item.nomansdelight.rice_bomb": "Rice Bomb"
+  "block.nomansdelight.meat_pie": "Meat Pie",
+  "item.nomansdelight.meat_pie_slice": "Meat Pie Slice",
+  "block.nomansdelight.fermentation_barrel": "Fermentation Barrel"
 }
